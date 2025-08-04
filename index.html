@@ -6,7 +6,9 @@
     <title>Hello World Contact Page</title>
     <style>
         body {
-            background: linear-gradient(135deg, #ff0000 0%, #ff9900 20%, #ffff00 40%, #00ff00 60%, #0000ff 80%, #9900ff 100%);
+            background: linear-gradient(270deg, #ff0000, #ff9900, #ffff00, #00ff00, #0000ff, #9900ff, #ff0000);
+            background-size: 1400% 1400%;
+            animation: rainbowMove 16s linear infinite;
             margin: 0;
             height: 100vh;
             display: flex;
@@ -15,6 +17,12 @@
             flex-direction: column;
             font-family: Arial, sans-serif;
             color: #fff;
+        }
+
+        @keyframes rainbowMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         .circle-img {
             width: 160px;
