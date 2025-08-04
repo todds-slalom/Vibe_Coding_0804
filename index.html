@@ -6,7 +6,7 @@
     <title>Hello World Contact Page</title>
     <style>
         body {
-            background: #1976d2;
+            background: linear-gradient(135deg, #ff0000 0%, #ff9900 20%, #ffff00 40%, #00ff00 60%, #0000ff 80%, #9900ff 100%);
             margin: 0;
             height: 100vh;
             display: flex;
@@ -42,7 +42,11 @@
             transition: background 0.2s, color 0.2s;
         }
         .contact-btn:hover {
-            background: #e3f2fd;
+            background: #ff0000;
+            color: #fff;
+            box-shadow: 0 0 24px 8px #ff0000, 0 0 8px 2px #fff inset;
+            border: 2px solid #fff;
+            transform: scale(1.08) rotate(-2deg);
         }
     </style>
 </head>
